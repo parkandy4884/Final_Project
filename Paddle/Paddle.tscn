@@ -75,7 +75,7 @@ texture = ExtResource("5_ge0b6")
 
 [node name="Pupil" type="Node2D" parent="Eye1"]
 
-[node name="Sprite" type="Sprite2D" parent="Eye1/Pupil"]
+[node name="Sprite2D" type="Sprite2D" parent="Eye1/Pupil"]
 position = Vector2(1.05, -3.60849)
 scale = Vector2(1.14, 1.48113)
 texture = ExtResource("6_dce2n")
@@ -87,7 +87,7 @@ texture = ExtResource("5_ge0b6")
 
 [node name="Pupil" type="Node2D" parent="Eye2"]
 
-[node name="Sprite" type="Sprite2D" parent="Eye2/Pupil"]
+[node name="Sprite2D" type="Sprite2D" parent="Eye2/Pupil"]
 position = Vector2(-0.869999, -3.60849)
 scale = Vector2(1.14, 1.48113)
 texture = ExtResource("6_dce2n")

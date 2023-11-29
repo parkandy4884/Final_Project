@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://icj3jjn342o5"
+path="res://.godot/imported/y2mate.com - 저작권없는브금차분해지고 싶은 날엔유튜브 무료bgm.mp3-7e4521bbba5c1296692fe621fc5dd5c2.mp3str"
+
+[deps]
+
+source_file="res://Assets/y2mate.com - 저작권없는브금차분해지고 싶은 날엔유튜브 무료bgm.mp3"
+dest_files=["res://.godot/imported/y2mate.com - 저작권없는브금차분해지고 싶은 날엔유튜브 무료bgm.mp3-7e4521bbba5c1296692fe621fc5dd5c2.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -19,13 +19,13 @@ func _physics_process(_delta):
 	var ball_container = get_node_or_null("/root/Game/Ball_Container")
 	if ball_container != null and ball_container.get_child_count() > 0:
 		var ball = ball_container.get_child(0)
-		$Eye1/Pupil/Sprite.position.x = 7
-		$Eye2/Pupil/Sprite.position.x = 7
+		$Eye1/Pupil/Sprite2D.position.x = 7
+		$Eye2/Pupil/Sprite2D.position.x = 7
 		$Eye1/Pupil.look_at(ball.position)
 		$Eye2/Pupil.look_at(ball.position)
 	else:
-		$Eye1/Pupil/Sprite.position.x = 0
-		$Eye2/Pupil/Sprite.position.x = 0
+		$Eye1/Pupil/Sprite2D.position.x = 0
+		$Eye2/Pupil/Sprite2D.position.x = 0
 
 func _input(event):
 	if event is InputEventMouseMotion:

@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=3 uid="uid://c76ip8vuk2pid"]
+[gd_scene load_steps=26 format=3 uid="uid://c76ip8vuk2pid"]
 
 [ext_resource type="Script" path="res://Brick/Brick_Container.gd" id="1"]
 [ext_resource type="PackedScene" uid="uid://d3o7nr1d2l1p" path="res://Paddle/Paddle.tscn" id="2"]
@@ -8,16 +8,17 @@
 [ext_resource type="Script" path="res://Game.gd" id="4"]
 [ext_resource type="PackedScene" uid="uid://ckbnb3u065ncy" path="res://UI/Pause_Menu.tscn" id="5"]
 [ext_resource type="Script" path="res://Wall/Wall.gd" id="6"]
+[ext_resource type="Shader" path="res://Game.gdshader" id="6_hs7nq"]
 [ext_resource type="PackedScene" uid="uid://drxwrc1b5f0hw" path="res://UI/HUD.tscn" id="7"]
 [ext_resource type="PackedScene" uid="uid://y45cm1yl1uhq" path="res://UI/Instructions.tscn" id="8"]
 [ext_resource type="Script" path="res://Effects/Camera.gd" id="9"]
 [ext_resource type="Script" path="res://Ball/Comet_Container.gd" id="11"]
-[ext_resource type="AudioStream" uid="uid://ceppnmgu1oser" path="res://Assets/die.wav" id="13"]
-[ext_resource type="AudioStream" uid="uid://c8or1hogkkqbx" path="res://Assets/wall.wav" id="14"]
-[ext_resource type="AudioStream" uid="uid://cf3st7bqdaia" path="res://Assets/y2mate.com - 저작권없는브금차분해지고 싶은 날엔유튜브 무료bgm.mp3" id="14_mf414"]
-[ext_resource type="AudioStream" uid="uid://cqssrh1ilxomq" path="res://Assets/고양이 울음소리Cat sounds-[AudioTrimmer.com].mp3" id="15_ftdht"]
+[ext_resource type="AudioStream" uid="uid://d1iketrxr1suk" path="res://Assets/die.wav" id="13"]
+[ext_resource type="AudioStream" uid="uid://bupmhr5mha2g0" path="res://Assets/wall.wav" id="14"]
+[ext_resource type="AudioStream" uid="uid://icj3jjn342o5" path="res://Assets/y2mate.com - 저작권없는브금차분해지고 싶은 날엔유튜브 무료bgm.mp3" id="14_mf414"]
+[ext_resource type="AudioStream" uid="uid://dh0032ihulsk2" path="res://Assets/고양이 울음소리Cat sounds-[AudioTrimmer.com].mp3" id="15_ftdht"]
 [ext_resource type="Script" path="res://Effects/Fever.gd" id="16"]
-[ext_resource type="AudioStream" uid="uid://dh4g5k46l71ua" path="res://Assets/mouse.mp3" id="17_tk28y"]
+[ext_resource type="AudioStream" uid="uid://b1tiqik4gdnor" path="res://Assets/mouse.mp3" id="17_tk28y"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_me45d"]
 shader = ExtResource("2_0jss8")
@@ -26,8 +27,17 @@ shader_parameter/NUM_EXPLOSIONS = 8.0
 shader_parameter/NUM_PARTICLES = 70.0
 shader_parameter/MOD3 = Vector3(0.1031, 0.11369, 0.13787)
 
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_0maac"]
+shader = ExtResource("6_hs7nq")
+
 [sub_resource type="RectangleShape2D" id="1"]
 size = Vector2(200, 1000)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_xwr0d"]
+shader = ExtResource("6_hs7nq")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ucfw0"]
+shader = ExtResource("6_hs7nq")
 
 [sub_resource type="RectangleShape2D" id="2"]
 size = Vector2(1224, 200)
@@ -52,6 +62,7 @@ script = ExtResource("11")
 script = ExtResource("6")
 
 [node name="ColorRect" type="ColorRect" parent="Wall_Container/Wall_Left"]
+material = SubResource("ShaderMaterial_0maac")
 offset_left = -190.0
 offset_top = -100.0
 offset_right = 10.0
@@ -66,6 +77,7 @@ position = Vector2(1024, 0)
 script = ExtResource("6")
 
 [node name="ColorRect" type="ColorRect" parent="Wall_Container/Wall_Right"]
+material = SubResource("ShaderMaterial_xwr0d")
 offset_left = -10.0
 offset_top = -100.0
 offset_right = 190.0
@@ -79,6 +91,7 @@ shape = SubResource("1")
 script = ExtResource("6")
 
 [node name="ColorRect" type="ColorRect" parent="Wall_Container/Wall_Top"]
+material = SubResource("ShaderMaterial_ucfw0")
 offset_left = -100.0
 offset_top = -190.0
 offset_right = 1124.0
@@ -123,7 +136,7 @@ offset_top = -24.0
 offset_right = 26.0
 offset_bottom = 18.0
 
-[node name="Camera" type="Camera2D" parent="."]
+[node name="Camera3D" type="Camera2D" parent="."]
 anchor_mode = 0
 script = ExtResource("9")
 
