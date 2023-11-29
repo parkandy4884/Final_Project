@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cva31kb3qu4cq"
+path="res://.godot/imported/y2mate.com - 고양이 울음소리Cat sounds-[AudioTrimmer.com].mp3-f906ae3da51939fc7e6194fc96017be3.mp3str"
+
+[deps]
+
+source_file="res://Assets/y2mate.com - 고양이 울음소리Cat sounds-[AudioTrimmer.com].mp3"
+dest_files=["res://.godot/imported/y2mate.com - 고양이 울음소리Cat sounds-[AudioTrimmer.com].mp3-f906ae3da51939fc7e6194fc96017be3.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

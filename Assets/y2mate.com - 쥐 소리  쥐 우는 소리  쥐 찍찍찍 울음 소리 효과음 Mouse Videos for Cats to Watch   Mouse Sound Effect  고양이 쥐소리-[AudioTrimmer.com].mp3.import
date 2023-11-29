@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://24typlthe2kf"
+path="res://.godot/imported/y2mate.com - 쥐 소리  쥐 우는 소리  쥐 찍찍찍 울음 소리 효과음 Mouse Videos for Cats to Watch   Mouse Sound Effect  고양이 쥐소리-[AudioTrimmer.com].mp3-8ae89c27b5b255da3e205277778372f8.mp3str"
+
+[deps]
+
+source_file="res://Assets/y2mate.com - 쥐 소리  쥐 우는 소리  쥐 찍찍찍 울음 소리 효과음 Mouse Videos for Cats to Watch   Mouse Sound Effect  고양이 쥐소리-[AudioTrimmer.com].mp3"
+dest_files=["res://.godot/imported/y2mate.com - 쥐 소리  쥐 우는 소리  쥐 찍찍찍 울음 소리 효과음 Mouse Videos for Cats to Watch   Mouse Sound Effect  고양이 쥐소리-[AudioTrimmer.com].mp3-8ae89c27b5b255da3e205277778372f8.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
