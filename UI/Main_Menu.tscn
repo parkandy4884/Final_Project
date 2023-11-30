@@ -7,7 +7,7 @@
 [ext_resource type="Shader" path="res://Effects/Main_Menu.gdshader" id="4_4pupa"]
 [ext_resource type="Script" path="res://UI/Boundary.gd" id="5"]
 [ext_resource type="AudioStream" uid="uid://dnbxpfk1sgc6g" path="res://Assets/y2mate.com - 천둥 번개  빗소리 5분 수면유도.mp3" id="7_bu7xp"]
-[ext_resource type="Texture2D" uid="uid://8kbmeqebbvre" path="res://Assets/picturetopeople.org-73c3d2900af158e99eb07c47b44f265527140937de56d8fe50.png" id="10_rp1wy"]
+[ext_resource type="FontFile" uid="uid://douq6mmwwo643" path="res://Assets/youmurdererbb_reg.ttf" id="9_g7mnl"]
 [ext_resource type="Shader" path="res://UI/Main_MenuCPU.gdshader" id="11_126o6"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_g83pr"]
@@ -107,10 +107,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -270.808
-offset_top = 4.50006
-offset_right = -70.8078
-offset_bottom = 44.5001
+offset_left = -195.808
+offset_top = 76.5
+offset_right = 4.19232
+offset_bottom = 116.5
 grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(1.25, 1.25)
@@ -125,10 +125,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -270.808
-offset_top = 140.5
-offset_right = -70.8078
-offset_bottom = 180.5
+offset_left = -195.808
+offset_top = 176.5
+offset_right = 4.19232
+offset_bottom = 216.5
 grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(1.25, 1.25)
@@ -140,14 +140,19 @@ text = "Quit"
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("7_bu7xp")
-volume_db = 24.0
+volume_db = -20.0
 autoplay = true
 
-[node name="Titles" type="Sprite2D" parent="."]
-modulate = Color(1, 1, 1, 0.509804)
-position = Vector2(488, 120)
-scale = Vector2(0.978571, 1.02133)
-texture = ExtResource("10_rp1wy")
+[node name="Label2" type="Label" parent="."]
+layout_mode = 0
+offset_left = 207.0
+offset_top = 190.0
+offset_right = 1000.0
+offset_bottom = 358.0
+theme_override_colors/font_color = Color(0.752941, 0, 0, 1)
+theme_override_fonts/font = ExtResource("9_g7mnl")
+theme_override_font_sizes/font_size = 200
+text = "Hell Breaker"
 
 [node name="CPUParticles2D" type="CPUParticles2D" parent="."]
 visible = false
