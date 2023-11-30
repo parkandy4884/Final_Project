@@ -13,8 +13,8 @@ Difficulties or surprises encountered during game development
 
 ## Execute
 Asset: 
-Game Character, main menu, ball - Andy Park
-Sound https://soundscrate.com/search/portal, Images https://opengameart.org/, shaders godotshaders - Allen Zheng
+- Game Character, main menu, ball - Andy Park
+- Sound https://soundscrate.com/search/portal, Images https://opengameart.org/, shaders godotshaders - Allen Zheng
 
 ## References
 Basic version from the Juicy Break
