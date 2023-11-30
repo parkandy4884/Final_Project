@@ -2,8 +2,8 @@ extends Node
 
 var levels = [
 	{
-		"name":"Level 1",
-		"instructions":"Break all the Bricks",
+		"name":"Phase 1",
+		"instructions":"Kill them all.",
 		"multiplier":1.0,
 		"timer":120,
 		"layout":[
@@ -18,8 +18,8 @@ var levels = [
 		]
 	}
 	,{
-		"name":"Level 2",
-		"instructions":"Break all the Bricks",
+		"name":"Phase 2",
+		"instructions":"Kill them all.",
 		"multiplier":1.2,
 		"timer":100,
 		"layout":[

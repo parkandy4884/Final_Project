@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://ckbnb3u065ncy"]
+[gd_scene load_steps=7 format=3 uid="uid://ckbnb3u065ncy"]
 
 [ext_resource type="Script" path="res://UI/Pause_Menu.gd" id="1"]
 [ext_resource type="Theme" uid="uid://dtshrykppl4yn" path="res://UI/UI.tres" id="2"]
@@ -84,6 +84,10 @@ theme_override_colors/font_color = Color(1, 0, 0, 1)
 theme_override_fonts/font = ExtResource("4_x6bsc")
 theme_override_font_sizes/font_size = 38
 text = "Quit"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_lv85s")
+autoplay = true
 
 [connection signal="pressed" from="Restart" to="." method="_on_Restart_pressed"]
 [connection signal="pressed" from="Quit" to="." method="_on_Quit_pressed"]
