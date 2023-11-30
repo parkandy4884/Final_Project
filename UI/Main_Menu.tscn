@@ -9,7 +9,7 @@
 [ext_resource type="Shader" path="res://Effects/Main_Menu.gdshader" id="4_4pupa"]
 [ext_resource type="Script" path="res://UI/Boundary.gd" id="5"]
 [ext_resource type="AudioStream" uid="uid://bupmhr5mha2g0" path="res://Assets/wall.wav" id="6"]
-[ext_resource type="Texture2D" uid="uid://8kbmeqebbvre" path="res://picturetopeople.org-73c3d2900af158e99eb07c47b44f265527140937de56d8fe50.png" id="10_1rada"]
+[ext_resource type="Texture2D" uid="uid://8kbmeqebbvre" path="res://Assets/picturetopeople.org-73c3d2900af158e99eb07c47b44f265527140937de56d8fe50.png" id="10_rp1wy"]
 [ext_resource type="Shader" path="res://UI/Main_MenuCPU.gdshader" id="11_126o6"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_8r17u"]
@@ -169,7 +169,7 @@ autoplay = true
 modulate = Color(1, 1, 1, 0.509804)
 position = Vector2(483, 91)
 scale = Vector2(0.978571, 1.02133)
-texture = ExtResource("10_1rada")
+texture = ExtResource("10_rp1wy")
 
 [node name="CPUParticles2D" type="CPUParticles2D" parent="."]
 light_mask = 0
