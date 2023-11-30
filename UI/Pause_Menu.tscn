@@ -1,9 +1,10 @@
-[gd_scene load_steps=6 format=3 uid="uid://ckbnb3u065ncy"]
+[gd_scene load_steps=7 format=3 uid="uid://ckbnb3u065ncy"]
 
 [ext_resource type="Script" path="res://UI/Pause_Menu.gd" id="1"]
 [ext_resource type="Theme" uid="uid://dtshrykppl4yn" path="res://UI/UI.tres" id="2"]
 [ext_resource type="FontFile" uid="uid://b7rdpc5iwlnuh" path="res://UI/Title.tres" id="3"]
 [ext_resource type="Shader" path="res://UI/Pause_Menu.gdshader" id="3_ikxoj"]
+[ext_resource type="AudioStream" uid="uid://bxff2yil823hj" path="res://Assets/Menu_music_project.wav" id="5_lv85s"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_yx4cb"]
 shader = ExtResource("3_ikxoj")
@@ -84,6 +85,10 @@ grow_vertical = 2
 theme_override_colors/font_color = Color(1, 0, 0, 1)
 theme_override_font_sizes/font_size = 20
 text = "Quit"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_lv85s")
+autoplay = true
 
 [connection signal="pressed" from="Restart" to="." method="_on_Restart_pressed"]
 [connection signal="pressed" from="Quit" to="." method="_on_Quit_pressed"]
