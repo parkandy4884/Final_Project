@@ -4,6 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://d3o7nr1d2l1p" path="res://Paddle/Paddle.tscn" id="2"]
 [ext_resource type="Shader" path="res://Effects/Game.gdshader" id="2_0jss8"]
 [ext_resource type="Shader" path="res://UI/Main_Menu.gdshader" id="2_bw4cr"]
+[ext_resource type="AudioStream" uid="uid://bkhh80d6qqamt" path="res://UI/Asian-Graveyard-Remastered(chosic.com).mp3" id="2_ylkhh"]
 [ext_resource type="Script" path="res://Ball/Ball_Container.gd" id="3"]
 [ext_resource type="Script" path="res://Effects/Background.gd" id="3_qmtvj"]
 [ext_resource type="Texture2D" uid="uid://bmg11mfesaaf" path="res://Assets/catbackground.png" id="3_s4sl1"]
@@ -14,12 +15,11 @@
 [ext_resource type="PackedScene" uid="uid://drxwrc1b5f0hw" path="res://UI/HUD.tscn" id="7"]
 [ext_resource type="PackedScene" uid="uid://y45cm1yl1uhq" path="res://UI/Instructions.tscn" id="8"]
 [ext_resource type="Script" path="res://Effects/Camera.gd" id="9"]
-[ext_resource type="AudioStream" uid="uid://d1iketrxr1suk" path="res://Assets/die.wav" id="13"]
-[ext_resource type="AudioStream" uid="uid://bupmhr5mha2g0" path="res://Assets/wall.wav" id="14"]
-[ext_resource type="AudioStream" uid="uid://icj3jjn342o5" path="res://Assets/y2mate.com - 저작권없는브금차분해지고 싶은 날엔유튜브 무료bgm.mp3" id="14_mf414"]
-[ext_resource type="AudioStream" uid="uid://dh0032ihulsk2" path="res://Assets/고양이 울음소리Cat sounds-[AudioTrimmer.com].mp3" id="15_ftdht"]
 [ext_resource type="Script" path="res://Effects/Fever.gd" id="16"]
-[ext_resource type="AudioStream" uid="uid://b1tiqik4gdnor" path="res://Assets/mouse.mp3" id="17_tk28y"]
+[ext_resource type="AudioStream" uid="uid://dsmsfwb4v8bfu" path="res://Assets/mixkit-wizard-fire-woosh-1326.wav" id="17_xvjsa"]
+[ext_resource type="AudioStream" uid="uid://dlgnpg8g2u524" path="res://Assets/fire-magic-6947.mp3" id="18_dkgni"]
+[ext_resource type="AudioStream" uid="uid://cnbivo2vfraq7" path="res://Assets/scream-121575.mp3" id="19_u8mr7"]
+[ext_resource type="AudioStream" uid="uid://bldv0u1d151e4" path="res://Assets/demonic-woman-scream-6333.mp3" id="20_w8chh"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_rlodr"]
 shader = ExtResource("2_bw4cr")
@@ -55,6 +55,11 @@ size = Vector2(1224, 200)
 
 [node name="Game" type="Node2D"]
 script = ExtResource("4")
+
+[node name="Music" type="AudioStreamPlayer2D" parent="."]
+process_mode = 3
+stream = ExtResource("2_ylkhh")
+autoplay = true
 
 [node name="Sprite2D2" type="Sprite2D" parent="."]
 material = SubResource("ShaderMaterial_rlodr")
@@ -157,23 +162,16 @@ offset_bottom = 107.0
 anchor_mode = 0
 script = ExtResource("9")
 
-[node name="Music" type="AudioStreamPlayer2D" parent="."]
-process_mode = 3
-stream = ExtResource("14_mf414")
-volume_db = -13.0
-autoplay = true
-
 [node name="Paddle_Audio" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("15_ftdht")
+stream = ExtResource("17_xvjsa")
 
 [node name="Wall_Audio" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("14")
+stream = ExtResource("18_dkgni")
 
 [node name="Brick_Audio" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("17_tk28y")
-volume_db = 20.0
+stream = ExtResource("19_u8mr7")
 
 [node name="Ball_Audio" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("13")
+stream = ExtResource("20_w8chh")
 
 [connection signal="timeout" from="Fever/Timer" to="Fever" method="_on_Timer_timeout"]

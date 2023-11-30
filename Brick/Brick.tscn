@@ -1,7 +1,8 @@
-[gd_scene load_steps=8 format=3 uid="uid://y8hwusp5m4vu"]
+[gd_scene load_steps=9 format=3 uid="uid://y8hwusp5m4vu"]
 
 [ext_resource type="Script" path="res://Brick/Brick.gd" id="1"]
-[ext_resource type="Texture2D" uid="uid://bvv6t7jdjiwwb" path="res://Assets/cateffectdie.png" id="2_2c3tw"]
+[ext_resource type="Texture2D" uid="uid://bsucltb43lege" path="res://Brick/blood-png-1.png" id="2_orfuu"]
+[ext_resource type="Texture2D" uid="uid://d25eoogjeitoe" path="res://Assets/Perverted_Severed_Head (1).webp" id="3_1u0gc"]
 
 [sub_resource type="Curve" id="2"]
 _data = [Vector2(0.00347423, 0.513514), 0.0, 0.0, 0, 0, Vector2(0.510712, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
@@ -83,7 +84,7 @@ amount = 15
 lifetime = 0.4
 one_shot = true
 explosiveness = 0.5
-texture = ExtResource("2_2c3tw")
+texture = ExtResource("2_orfuu")
 emission_shape = 3
 emission_rect_extents = Vector2(45, 15)
 direction = Vector2(0, 0)
@@ -105,9 +106,9 @@ offset_right = 45.0
 offset_bottom = 15.0
 
 [node name="Sprite2D" type="Sprite2D" parent="ColorRect"]
-position = Vector2(45, 14)
-scale = Vector2(0.4, 0.3875)
-texture = ExtResource("2_2c3tw")
+position = Vector2(45, 15)
+scale = Vector2(0.0894445, 0.0589998)
+texture = ExtResource("3_1u0gc")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("1")
