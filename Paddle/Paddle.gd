@@ -38,10 +38,10 @@ func hit(_ball):
 	tween = create_tween().set_parallel(true)
 	$Images/Highlight.modulate.a = 1.0
 	tween.tween_property($Images/Highlight, "modulate:a", 0.0, time_highlight).set_trans(Tween.TRANS_LINEAR).set_ease(Tween.EASE_IN_OUT)
-	$Images/Highlight.scale = Vector2(2.0,2.0)
+	$Images/Highlight.scale = Vector2(1.0,1.0)
 	tween.tween_property($Images/Highlight, "scale", Vector2(1.0,1.0), time_highlight_size).set_trans(Tween.TRANS_BOUNCE).set_ease(Tween.EASE_IN)
-	$Images/Sprite2D.position.y = 30
-	tween.tween_property($Images/Sprite2D, "position:y", 10, time_bounce).set_trans(Tween.TRANS_BOUNCE).set_ease(Tween.EASE_OUT)
+	$Images/cat.position.y = 30
+	tween.tween_property($Images/cat, "position:y", 10, time_bounce).set_trans(Tween.TRANS_BOUNCE).set_ease(Tween.EASE_OUT)
 	var paddle_audio = get_node_or_null("/root/Game/Paddle_Audio")
 	if paddle_audio != null:
 		paddle_audio.play()

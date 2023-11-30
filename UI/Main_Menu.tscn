@@ -72,7 +72,7 @@ script = ExtResource("1")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 material = SubResource("ShaderMaterial_8r17u")
-position = Vector2(485.126, 324.876)
+position = Vector2(485, 270)
 scale = Vector2(1.13867, 0.997297)
 texture = ExtResource("3_as70p")
 
@@ -175,7 +175,6 @@ texture = ExtResource("10_1rada")
 light_mask = 0
 material = SubResource("ShaderMaterial_bbvpa")
 position = Vector2(552, 164)
-scale = Vector2(1, 1)
 amount = 45
 lifetime = 3.5
 randomness = 1.0

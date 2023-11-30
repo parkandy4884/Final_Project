@@ -62,7 +62,6 @@ func _integrate_forces(state):
 	else:
 		wobble()
 		distort()
-		comet()
 	
 	if position.y > Global.VP.y + 100:
 		die()
@@ -88,16 +87,6 @@ func distort():
 	var direction = Vector2(1 + linear_velocity.length() * distort_effect, 1 - linear_velocity.length() * distort_effect)
 	$Images.rotation = linear_velocity.angle()
 	$Images.scale = direction
-
-func comet():
-	h_rotate = wrapf(h_rotate+0.01, 0, 1)
-	var comet_container = get_node_or_null("/root/Game/Comet_Container")
-	if comet_container != null:
-		var sprite = $Images/Sprite2D.duplicate()
-		sprite.global_position = global_position
-		sprite.modulate.s = 0.6
-		sprite.modulate.h = h_rotate
-		comet_container.add_child(sprite)
 
 func die():
 	queue_free()
