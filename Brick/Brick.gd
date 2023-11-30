@@ -15,14 +15,14 @@ var sway_amplitude = 3.0
 var tween = null
 
 var colors = [
-	Color8(0, 0, 0),     # Dark red
-	Color8(130, 0, 0),     # Slightly brighter red
-	Color8(0, 0, 0),   # Brownish red
-	Color8(139, 0, 0),   # Firebrick red
-	Color8(0, 0, 0),       # Black
-	Color8(139, 0, 0),   # Firebrick red (again)
-	Color8(0, 0, 0),   # Brownish red (again)
-	Color8(139, 0, 0),     # Slightly brighter red (again)
+	Color8(0, 0, 0),     
+	Color8(130, 0, 0),     
+	Color8(0, 0, 0),   
+	Color8(139, 0, 0),  
+	Color8(0, 0, 0),       
+	Color8(139, 0, 0),   
+	Color8(0, 0, 0),   
+	Color8(139, 0, 0),     
 
 ]
 var color_index = 0
