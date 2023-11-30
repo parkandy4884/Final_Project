@@ -12,7 +12,7 @@ Difficulties or surprises encountered during game development
 - The collaboration system caused a collision between each other's works or an error in which important things disappeared
 
 ## Execute
-Asset: 
+Asset
 - Game Character, main menu, ball - Andy Park
 - Sound https://soundscrate.com/search/portal, Images https://opengameart.org/, shaders godotshaders - Allen Zheng
 
