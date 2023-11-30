@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://cd7snqtwiexh2"]
+[gd_scene load_steps=14 format=3 uid="uid://cd7snqtwiexh2"]
 
 [ext_resource type="Script" path="res://UI/Main_Menu.gd" id="1"]
 [ext_resource type="Theme" uid="uid://dtshrykppl4yn" path="res://UI/UI.tres" id="2"]
@@ -6,8 +6,10 @@
 [ext_resource type="Texture2D" uid="uid://cu6yjaptmq7de" path="res://Assets/0001.png" id="3_omcpo"]
 [ext_resource type="Shader" path="res://Effects/Main_Menu.gdshader" id="4_4pupa"]
 [ext_resource type="Script" path="res://UI/Boundary.gd" id="5"]
+[ext_resource type="AudioStream" uid="uid://bupmhr5mha2g0" path="res://Assets/wall.wav" id="6"]
+[ext_resource type="FontFile" uid="uid://douq6mmwwo643" path="res://Assets/youmurdererbb_reg.ttf" id="7_g1k7q"]
+[ext_resource type="Texture2D" uid="uid://8kbmeqebbvre" path="res://Assets/picturetopeople.org-73c3d2900af158e99eb07c47b44f265527140937de56d8fe50.png" id="10_rp1wy"]
 [ext_resource type="AudioStream" uid="uid://dnbxpfk1sgc6g" path="res://Assets/y2mate.com - 천둥 번개  빗소리 5분 수면유도.mp3" id="7_bu7xp"]
-[ext_resource type="FontFile" uid="uid://douq6mmwwo643" path="res://Assets/youmurdererbb_reg.ttf" id="9_g7mnl"]
 [ext_resource type="Shader" path="res://UI/Main_MenuCPU.gdshader" id="11_126o6"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_g83pr"]
@@ -115,7 +117,8 @@ grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(1.25, 1.25)
 theme_override_colors/font_color = Color(1, 0, 0, 1)
-theme_override_font_sizes/font_size = 20
+theme_override_fonts/font = ExtResource("7_g1k7q")
+theme_override_font_sizes/font_size = 35
 text = "Continue"
 
 [node name="Quit" type="Button" parent="."]
@@ -135,7 +138,8 @@ scale = Vector2(1.25, 1.25)
 theme_override_colors/font_color = Color(1, 0, 0, 1)
 theme_override_colors/icon_disabled_color = Color(1, 0, 0, 1)
 theme_override_constants/outline_size = 0
-theme_override_font_sizes/font_size = 20
+theme_override_fonts/font = ExtResource("7_g1k7q")
+theme_override_font_sizes/font_size = 35
 text = "Quit"
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
