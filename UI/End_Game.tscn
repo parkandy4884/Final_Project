@@ -1,16 +1,27 @@
-[gd_scene load_steps=7 format=3 uid="uid://b7vgphpe47op1"]
+[gd_scene load_steps=10 format=3 uid="uid://b7vgphpe47op1"]
 
 [ext_resource type="Script" path="res://UI/End_Game.gd" id="1"]
 [ext_resource type="Theme" uid="uid://dtshrykppl4yn" path="res://UI/UI.tres" id="2"]
 [ext_resource type="Shader" path="res://UI/End_Game.gdshader" id="3_pjyqc"]
+[ext_resource type="Shader" path="res://UI/End_Game_Rain.gdshader" id="4_2bvn5"]
 [ext_resource type="FontFile" uid="uid://douq6mmwwo643" path="res://Assets/youmurdererbb_reg.ttf" id="4_pav6t"]
 [ext_resource type="AudioStream" uid="uid://bfhqfe03pny4o" path="res://Assets/tunetank.com_4068_creepy-memories-of-the-distant-past_by_rage-sound.mp3" id="5_55dl2"]
+[ext_resource type="AudioStream" uid="uid://3gc231wyur2b" path="res://Assets/horrorghostscream.wav" id="6_2hl32"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_pn1bt"]
 shader = ExtResource("3_pjyqc")
 shader_parameter/distortion_factor = 0.1
 shader_parameter/speed_factor = 1.0
 shader_parameter/noise_factor = 0.5
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_cqsmw"]
+shader = ExtResource("4_2bvn5")
+shader_parameter/count = 150
+shader_parameter/slant = -0.01
+shader_parameter/speed = 50.0
+shader_parameter/blur = 0.002
+shader_parameter/colour = Color(238, 75, 43, 1)
+shader_parameter/size = Vector2(0.005, 0.2)
 
 [node name="End_Game" type="Control"]
 layout_mode = 3
@@ -22,15 +33,17 @@ grow_vertical = 2
 theme = ExtResource("2")
 script = ExtResource("1")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-
 [node name="ColorRect" type="ColorRect" parent="."]
 material = SubResource("ShaderMaterial_pn1bt")
 layout_mode = 0
 offset_right = 1196.0
 offset_bottom = 820.0
 
-[node name="Node2D" type="Node2D" parent="."]
+[node name="ColorRect2" type="ColorRect" parent="."]
+material = SubResource("ShaderMaterial_cqsmw")
+layout_mode = 0
+offset_right = 1212.0
+offset_bottom = 822.0
 
 [node name="Label" type="Label" parent="."]
 layout_mode = 1
@@ -43,7 +56,7 @@ offset_right = -3.0
 offset_bottom = -330.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_colors/font_color = Color(0.25098, 0, 0, 1)
+theme_override_colors/font_color = Color(0.533333, 0, 0, 1)
 theme_override_fonts/font = ExtResource("4_pav6t")
 theme_override_font_sizes/font_size = 100
 text = "Game Over"
@@ -87,8 +100,12 @@ theme_override_fonts/font = ExtResource("4_pav6t")
 theme_override_font_sizes/font_size = 35
 text = "Quit"
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+[node name="Music" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("5_55dl2")
+autoplay = true
+
+[node name="Spooky Sound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_2hl32")
 autoplay = true
 
 [connection signal="pressed" from="restart1" to="." method="_on_restart_1_pressed"]

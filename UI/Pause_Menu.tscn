@@ -2,8 +2,8 @@
 
 [ext_resource type="Script" path="res://UI/Pause_Menu.gd" id="1"]
 [ext_resource type="Theme" uid="uid://dtshrykppl4yn" path="res://UI/UI.tres" id="2"]
-[ext_resource type="FontFile" uid="uid://b7rdpc5iwlnuh" path="res://UI/Title.tres" id="3"]
 [ext_resource type="Shader" path="res://UI/Pause_Menu.gdshader" id="3_ikxoj"]
+[ext_resource type="FontFile" uid="uid://douq6mmwwo643" path="res://Assets/youmurdererbb_reg.ttf" id="4_x6bsc"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_yx4cb"]
 shader = ExtResource("3_ikxoj")
@@ -38,15 +38,13 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -4.0
-offset_top = -54.0
-offset_right = -4.0
-offset_bottom = -354.0
+offset_top = -20.0
+offset_bottom = -320.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_colors/font_color = Color(1, 0, 0, 1)
-theme_override_fonts/font = ExtResource("3")
-theme_override_font_sizes/font_size = 60
+theme_override_fonts/font = ExtResource("4_x6bsc")
+theme_override_font_sizes/font_size = 118
 text = "Paused"
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -65,7 +63,8 @@ offset_bottom = -30.912
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_colors/font_color = Color(1, 0, 0, 1)
-theme_override_font_sizes/font_size = 20
+theme_override_fonts/font = ExtResource("4_x6bsc")
+theme_override_font_sizes/font_size = 34
 text = "Restart Game"
 
 [node name="Quit" type="Button" parent="."]
@@ -82,7 +81,8 @@ offset_bottom = 20.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_colors/font_color = Color(1, 0, 0, 1)
-theme_override_font_sizes/font_size = 20
+theme_override_fonts/font = ExtResource("4_x6bsc")
+theme_override_font_sizes/font_size = 38
 text = "Quit"
 
 [connection signal="pressed" from="Restart" to="." method="_on_Restart_pressed"]
