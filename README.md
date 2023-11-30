@@ -1,13 +1,22 @@
-# Final_Project
-Final_Project for MSCH-C220
+# Project Name
+MSCH-C220 Game Jam November 2023
 
-## Implementation
-The game engine was implemented in Python 3.10 with Godot 4.1
-## What Makes this a Game?
+## theme
+Theme: Inside out
+
+## Game play
+Hit the balls to the blocks and destory all of the blocks to proceed to next round
+
+## an obstacle
+Difficulties or surprises encountered during game development
+- The collaboration system caused a collision between each other's works or an error in which important things disappeared
+
+## Execute
+Asset: 
+Game Character, main menu, ball - Andy Park
+Sound https://soundscrate.com/search/portal, Images https://opengameart.org/, shaders godotshaders - Allen Zheng
 
 ## References
+Basic version from the Juicy Break
 
-## Future Development
-
-## Created by
-Andy Park, Allen Zheng, Allan Mance, Charlie Ballard
+## future development
